@@ -1,7 +1,11 @@
 import axios from "axios";
 
-const api = axios.create({
-    baseURL: "https://oqa.onrender.com", 
-});
+app.use(
+  cors({
+    origin: "https://online-quiz-app-1ok0.onrender.com",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 export default api;
